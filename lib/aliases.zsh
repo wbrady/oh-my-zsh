@@ -36,11 +36,13 @@ alias s='echo -n "Please enter your name for screen: " && read && screen -dRR "$
 # Taxi Magic
 ## Move around
 alias cdrc='cd ~/projects/rc'
+alias cdshed='cd ~/projects/shed'
 alias cdf='cd ~/projects/fleet-magic'
 alias cdfm='cd ~/projects/fleet-magic'
 alias cdv='cd ~/projects/vehicle'
 alias cdtools='cd ~/projects/devops-tools'
 alias cdchef='cd ~/projects/devops-chef'
+alias cdv='cd ~/projects/vehicle'
 
 ## Resque workers
 alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
