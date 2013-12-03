@@ -35,6 +35,7 @@ alias s='echo -n "Please enter your name for screen: " && read && screen -dRR "$
 
 # Personal projects
 alias cd.='cd ~/projects/dotfiles'
+alias cdomz='cd ~/.oh-my-zsh'
 
 # Taxi Magic
 ## Move around
@@ -46,6 +47,7 @@ alias cdv='cd ~/projects/vehicle'
 alias cdtools='cd ~/projects/devops-tools'
 alias cdchef='cd ~/projects/devops-chef'
 alias cdpos='cd ~/projects/positioning'
+alias cdch='cd ~/projects/charybdis'
 
 ## Resque workers
 alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
