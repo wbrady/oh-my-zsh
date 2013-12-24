@@ -36,6 +36,7 @@ alias s='echo -n "Please enter your name for screen: " && read && screen -dRR "$
 # Personal projects
 alias cd.='cd ~/projects/dotfiles'
 alias cdomz='cd ~/.oh-my-zsh'
+alias cdgo='cd $GOPATH'
 
 # Taxi Magic
 ## Move around
