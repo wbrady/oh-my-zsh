@@ -12,6 +12,8 @@ alias please='sudo'
 
 alias g='grep -in'
 
+alias pr="open http://github.com/ridecharge/\$(application)/pull/new/\$(git_branch)"
+
 # Show history
 alias history='fc -l 1'
 

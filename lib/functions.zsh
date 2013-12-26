@@ -24,3 +24,11 @@ gif-ify() {
     echo "proper usage: gif-ify <input_movie.mov> <output_file.gif>. You DO need to include extensions."
   fi
 }
+
+function application {
+  echo "$(pwd | awk -F/ '{print$NF}')"
+}
+
+function git_branch {
+  echo "$(git symbolic-ref HEAD | cut -d'/' -f3)"
+}
