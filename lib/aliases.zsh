@@ -50,7 +50,8 @@ alias cdv='cd ~/projects/vehicle'
 alias cdtools='cd ~/projects/devops-tools'
 alias cdchef='cd ~/projects/devops-chef'
 alias cdpos='cd ~/projects/positioning'
-alias cdch='cd ~/projects/charybdis'
+alias cdch='cd $GOPATH/src/charybdis'
+alias cdgomk='cd $GOPATH/src/go-mk'
 
 ## Resque workers
 alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
