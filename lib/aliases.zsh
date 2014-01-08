@@ -52,7 +52,7 @@ alias cdchef='cd ~/projects/devops-chef'
 alias cdpos='cd ~/projects/positioning'
 alias cdch='cd $GOPATH/src/charybdis'
 alias cdgomk='cd $GOPATH/src/go-mk'
-alias cdds = 'cd ~/projects/dispatch-systems'
+alias cdds='cd ~/projects/dispatch-systems'
 
 ## Resque workers
 alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
