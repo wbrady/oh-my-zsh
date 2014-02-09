@@ -32,3 +32,13 @@ function application {
 function git_branch {
   echo "$(git symbolic-ref HEAD | cut -d'/' -f3)"
 }
+
+resque_web_run() {
+  echo "Running resque-web -p 8283 -r $1 -N resque:$2"
+  echo "Stop with resque_web_stop"
+  resque-web -p 8283 -r $1 -N resque:$2
+}
+
+resque_web_stop() {
+  resque-web -K
+}
