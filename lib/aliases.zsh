@@ -36,7 +36,7 @@ alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 alias s='echo -n "Please enter your name for screen: " && read && screen -dRR "$REPLY"'
 
 # Personal projects
-alias cd.='cd ~/projects/dotfiles'
+alias cd.='cd ~/.dotfiles'
 alias cdomz='cd ~/.oh-my-zsh'
 alias cdgo='cd $GOPATH'
 
