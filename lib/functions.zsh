@@ -44,7 +44,7 @@ resque_web_stop() {
 }
 
 migrate() {
-  rake db:migrate db:rollback && rake db:migrate
+  bake db:migrate db:rollback && bake db:migrate
 }
 
 
