@@ -42,3 +42,14 @@ resque_web_run() {
 resque_web_stop() {
   resque-web -K
 }
+
+migrate() {
+  rake db:migrate db:rollback && rake db:migrate
+}
+
+
+# Make directory and change into it.
+# from https://github.com/thoughtbot/dotfiles/blob/master/zsh/functions/mcd
+mcd() {
+  mkdir -p "$1" && cd "$1";
+}
