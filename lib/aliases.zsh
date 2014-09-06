@@ -43,6 +43,7 @@ alias cdgo='cd $GOPATH'
 # Taxi Magic
 ## Move around
 alias cdrc='cd ~/projects/rc'
+alias cdrips='cd ~/projects/rips'
 alias cdshed='cd ~/projects/shed'
 alias cdf='cd ~/projects/fleet-magic'
 alias cdfm='cd ~/projects/fleet-magic'
@@ -50,10 +51,14 @@ alias cdv='cd ~/projects/vehicle'
 alias cdtools='cd ~/projects/devops-tools'
 alias cdchef='cd ~/projects/devops-chef'
 alias cdpos='cd ~/projects/positioning'
-alias cdch='cd $GOPATH/src/charybdis'
-alias cdgomk='cd $GOPATH/src/go-mk'
 alias cdds='cd ~/projects/dispatch-systems'
 alias cdloc='cd ~/projects/location'
+alias cdccp='cd ~/projects/ccp'
+alias cdmk='cd ~/projects/mk'
+alias cdch='cd $GOPATH/src/charybdis'
+alias cdgomk='cd $GOPATH/src/go-mk'
+alias cdgor='cd $GOPATH/src/go_resque_workers'
+alias cdgod='cd $GOPATH/src/god'
 
 ## Resque workers
 alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
