@@ -10,9 +10,9 @@ alias -- -='cd -'
 alias _='sudo'
 alias please='sudo'
 
-alias g='grep -in'
+# alias g='grep -in'
 
-alias pr="open http://github.com/ridecharge/\$(application)/pull/new/\$(git_branch)"
+alias g='git'
 
 # Show history
 alias history='fc -l 1'
@@ -39,32 +39,3 @@ alias s='echo -n "Please enter your name for screen: " && read && screen -dRR "$
 alias cd.='cd ~/.dotfiles'
 alias cdomz='cd ~/.oh-my-zsh'
 alias cdgo='cd $GOPATH'
-
-# Taxi Magic
-## Move around
-alias cdrc='cd ~/projects/rc'
-alias cdrips='cd ~/projects/rips'
-alias cdshed='cd ~/projects/shed'
-alias cdf='cd ~/projects/fleet-magic'
-alias cdfm='cd ~/projects/fleet-magic'
-alias cdv='cd ~/projects/vehicle'
-alias cdtools='cd ~/projects/devops-tools'
-alias cdchef='cd ~/projects/devops-chef'
-alias cdpos='cd ~/projects/positioning'
-alias cdds='cd ~/projects/dispatch-systems'
-alias cdloc='cd ~/projects/location'
-alias cdccp='cd ~/projects/ccp'
-alias cdmk='cd ~/projects/mk'
-alias cdch='cd $GOPATH/src/charybdis'
-alias cdgomk='cd $GOPATH/src/go-mk'
-alias cdgor='cd $GOPATH/src/go_resque_workers'
-alias cdgod='cd $GOPATH/src/god'
-
-## Resque workers
-alias resque_rc_worker="cdrc; bake resque:work QUEUE=* VVERBOSE=1;"
-alias resque_rc_scheduler="cdrc; bake resque:scheduler;"
-alias resque_fm_worker="cdf; bake resque:work QUEUE=* VVERBOSE=1;"
-alias resque_fm_scheduler="cdf; bake resque:scheduler;"
-alias resque_vw_worker="cdv; bake resque:work QUEUE=* VVERBOSE=1;"
-alias resque_vw_scheduler="cdv; bake resque:scheduler;"
-

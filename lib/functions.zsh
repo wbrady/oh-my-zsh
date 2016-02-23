@@ -47,9 +47,17 @@ migrate() {
   bake db:migrate db:rollback && bake db:migrate
 }
 
-
 # Make directory and change into it.
 # from https://github.com/thoughtbot/dotfiles/blob/master/zsh/functions/mcd
 mcd() {
   mkdir -p "$1" && cd "$1";
+}
+
+url_encode() {
+  # echo $1 | perl -MURI::Escape -ne 'chomp;print uri_escape($_),"\n"'
+  ruby -e "require 'uri'; puts URI.escape(File.read('/Users/wbrady/' + ARGV[0]))" $1
+}
+
+fix_vb() {
+  sudo /Library/StartupItems/VirtualBox/VirtualBox restart
 }
