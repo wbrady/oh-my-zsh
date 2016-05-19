@@ -61,3 +61,4 @@ url_encode() {
 fix_vb() {
   sudo /Library/StartupItems/VirtualBox/VirtualBox restart
 }
+
